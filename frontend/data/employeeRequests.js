@@ -1,0 +1,203 @@
+/**
+ * Veridian Corp Employee Requests (Section 2 of Data Pack)
+ * Exercise timeframe: Week of Monday 21 Sep 2026 - Friday 25 Sep 2026.
+ * Contains REQ-01 through REQ-15 verbatim from assignment.
+ */
+
+export const EMPLOYEE_REQUESTS = [
+  {
+    id: "REQ-01",
+    employee: "Aditi Sharma",
+    email: "aditi.sharma@veridian-corp.example",
+    dateOpened: "Mon 21 Sep",
+    request: "My laptop won’t turn on at all, it’s completely dead, had it about 3.5 years now.",
+    initialActionTaken: "Not started",
+    category: "Hardware & Devices",
+    urgency: "High",
+    expectedPolicy: ["KB-03", "ASSET-POLICY-01"],
+    expectedPrecedent: "TK-1043",
+    status: "Not started"
+  },
+  {
+    id: "REQ-02",
+    employee: "Vikram Chawla",
+    email: "vikram.chawla@veridian-corp.example",
+    dateOpened: "Mon 21 Sep",
+    request: "Can I get Wi-Fi access for a guest visiting our office tomorrow?",
+    initialActionTaken: "Not started",
+    category: "Network & Remote Access",
+    urgency: "Medium",
+    expectedPolicy: ["KB-07"],
+    expectedPrecedent: "TK-1051",
+    status: "Not started"
+  },
+  {
+    id: "REQ-03",
+    employee: "Karan Mehta",
+    email: "karan.mehta@veridian-corp.example",
+    dateOpened: "Mon 21 Sep",
+    request: "I’m locked out of my account, tried my password 6 times.",
+    initialActionTaken: "In progress — reset queued",
+    category: "Access & Identity",
+    urgency: "High",
+    expectedPolicy: ["KB-01"],
+    expectedPrecedent: "TK-1049",
+    status: "In progress — reset queued"
+  },
+  {
+    id: "REQ-04",
+    employee: "Ritu Bhatia",
+    email: "ritu.bhatia@veridian-corp.example",
+    dateOpened: "Tue 22 Sep",
+    request: "Need approval to install a data-analysis tool that’s not in the software catalog.",
+    initialActionTaken: "Waiting on Security review",
+    category: "Software & Applications",
+    urgency: "Medium",
+    expectedPolicy: ["KB-04"],
+    expectedPrecedent: "TK-1044",
+    status: "Waiting on Security review"
+  },
+  {
+    id: "REQ-05",
+    employee: "Sanjay Oberoi",
+    email: "sanjay.oberoi@veridian-corp.example",
+    dateOpened: "Tue 22 Sep",
+    request: "My VPN stopped working this morning, says credentials expired.",
+    initialActionTaken: "Not started",
+    category: "Network & Remote Access",
+    urgency: "High",
+    expectedPolicy: ["KB-02"],
+    expectedPrecedent: "TK-1042",
+    status: "Not started"
+  },
+  {
+    id: "REQ-06",
+    employee: "Meera Iyer",
+    email: "meera.iyer@veridian-corp.example",
+    dateOpened: "Tue 22 Sep",
+    request: "Printer on the 3rd floor keeps showing “paper jam” even though there’s no jam.",
+    initialActionTaken: "Investigating — technician assigned",
+    category: "Peripherals & Office",
+    urgency: "Medium",
+    expectedPolicy: ["KB-05"],
+    expectedPrecedent: "TK-1046",
+    status: "Investigating — technician assigned"
+  },
+  {
+    id: "REQ-07",
+    employee: "Farhan Ali",
+    email: "farhan.ali@veridian-corp.example",
+    dateOpened: "Wed 23 Sep",
+    request: "I’ve started working from home 4 days a week, how do I get a monitor?",
+    initialActionTaken: "Not started",
+    category: "Workplace & Equipment",
+    urgency: "Low",
+    expectedPolicy: ["KB-10", "ASSET-POLICY-01"],
+    expectedPrecedent: "TK-1047",
+    status: "Not started"
+  },
+  {
+    id: "REQ-08",
+    employee: "Ananya Reddy",
+    email: "ananya.reddy@veridian-corp.example",
+    dateOpened: "Wed 23 Sep",
+    request: "I think I got a phishing email asking for my login — forwarding it to a few teammates to check.",
+    initialActionTaken: "Escalated to Security (auto-flagged)",
+    category: "Information Security",
+    urgency: "Critical",
+    expectedPolicy: ["KB-09"],
+    expectedPrecedent: "TK-1048",
+    status: "Escalated to Security (auto-flagged)"
+  },
+  {
+    id: "REQ-09",
+    employee: "Rohit Desai",
+    email: "rohit.desai@veridian-corp.example",
+    dateOpened: "Wed 23 Sep",
+    request: "My mailbox is full and I can’t send emails.",
+    initialActionTaken: "Not started",
+    category: "Email & Collaboration",
+    urgency: "High",
+    expectedPolicy: ["KB-06"],
+    expectedPrecedent: "TK-1045",
+    status: "Not started"
+  },
+  {
+    id: "REQ-10",
+    employee: "Kavya Pillai",
+    email: "kavya.pillai@veridian-corp.example",
+    dateOpened: "Wed 23 Sep",
+    request: "Can someone give me admin access to the finance reporting server? Need it urgently for month-end.",
+    initialActionTaken: "Not started",
+    category: "Access & Identity",
+    urgency: "High",
+    expectedPolicy: ["ASSET-POLICY-01"],
+    expectedPrecedent: "TK-1050",
+    status: "Not started"
+  },
+  {
+    id: "REQ-11",
+    employee: "Nikhil Bansal",
+    email: "nikhil.bansal@veridian-corp.example",
+    dateOpened: "Thu 24 Sep",
+    request: "New contractor joining my team next week, they’ll need VPN access.",
+    initialActionTaken: "Not started",
+    category: "Network & Remote Access",
+    urgency: "Medium",
+    expectedPolicy: ["KB-02"],
+    expectedPrecedent: "TK-1042",
+    status: "Not started"
+  },
+  {
+    id: "REQ-12",
+    employee: "Sneha Kulkarni",
+    email: "sneha.kulkarni@veridian-corp.example",
+    dateOpened: "Thu 24 Sep",
+    request: "I can’t log into the expense tool, keeps saying invalid credentials.",
+    initialActionTaken: "Waiting on employee response (asked for a screenshot, no reply yet)",
+    category: "Finance & ERP Systems",
+    urgency: "Medium",
+    expectedPolicy: ["KB-08"],
+    expectedPrecedent: null,
+    status: "Waiting on employee response (asked for a screenshot, no reply yet)"
+  },
+  {
+    id: "REQ-13",
+    employee: "Aman Gupta",
+    email: "aman.gupta@veridian-corp.example",
+    dateOpened: "Thu 24 Sep",
+    request: "Laptop screen is flickering on and off, had it 2 years, might just need a fix not a replacement.",
+    initialActionTaken: "Not started",
+    category: "Hardware & Devices",
+    urgency: "Medium",
+    expectedPolicy: ["KB-03", "ASSET-POLICY-01"],
+    expectedPrecedent: null,
+    status: "Not started"
+  },
+  {
+    id: "REQ-14",
+    employee: "Tanya Chopra",
+    email: "tanya.chopra@veridian-corp.example",
+    dateOpened: "Fri 25 Sep",
+    request: "Requesting approval to install a browser extension for productivity tracking.",
+    initialActionTaken: "Not started",
+    category: "Software & Applications",
+    urgency: "Low",
+    expectedPolicy: ["KB-04"],
+    expectedPrecedent: "TK-1044",
+    status: "Not started"
+  },
+  {
+    id: "REQ-15",
+    employee: "Rahul Menon",
+    email: "rahul.menon@veridian-corp.example",
+    dateOpened: "Fri 25 Sep",
+    request: "hey can you help, its not working",
+    initialActionTaken: "Not started",
+    category: "General Support",
+    urgency: "Medium",
+    expectedPolicy: [],
+    expectedPrecedent: null,
+    status: "Not started"
+  }
+];

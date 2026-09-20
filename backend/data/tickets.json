@@ -1,0 +1,102 @@
+[
+  {
+    "ticket_id": "TK-1042",
+    "employee": "R. Verma",
+    "issue_summary": "VPN credential expired",
+    "status": "Resolved (closed)",
+    "is_active": false,
+    "category": "Network & Remote Access",
+    "policy_ref": "KB-02",
+    "resolution_notes": "Employee renewed 90-day credentials via self-service portal per KB-02."
+  },
+  {
+    "ticket_id": "TK-1043",
+    "employee": "S. Iyer",
+    "issue_summary": "Laptop replacement (3.2 yrs old)",
+    "status": "Approved — pending fulfillment (active)",
+    "is_active": true,
+    "category": "Hardware & Devices",
+    "policy_ref": "KB-03 & ASSET-POLICY-01",
+    "resolution_notes": "Laptop is 3.2 yrs old (>3 yrs). Early replacement under 4-year Finance refresh cycle has received Finance sign-off. Awaiting hardware depot shipment."
+  },
+  {
+    "ticket_id": "TK-1044",
+    "employee": "A. Khan",
+    "issue_summary": "Non-catalog software request",
+    "status": "Pending Security review (active)",
+    "is_active": true,
+    "category": "Software & Applications",
+    "policy_ref": "KB-04",
+    "resolution_notes": "Non-catalog tool submitted for IT Security review under KB-04 (3-5 business days SLA)."
+  },
+  {
+    "ticket_id": "TK-1045",
+    "employee": "P. Joshi",
+    "issue_summary": "Mailbox quota increase",
+    "status": "Approved at 35GB (closed)",
+    "is_active": false,
+    "category": "Email & Collaboration",
+    "policy_ref": "KB-06",
+    "resolution_notes": "Manager approved quota expansion beyond 25GB default. Quota set to 35GB (under 50GB cap)."
+  },
+  {
+    "ticket_id": "TK-1046",
+    "employee": "M. Das",
+    "issue_summary": "Printer paper jam, floor 2",
+    "status": "Resolved (closed)",
+    "is_active": false,
+    "category": "Peripherals & Office",
+    "policy_ref": "KB-05",
+    "resolution_notes": "Technician cleared false paper jam sensor alert after print spooler restart."
+  },
+  {
+    "ticket_id": "TK-1047",
+    "employee": "K. Singh",
+    "issue_summary": "Home office equipment request",
+    "status": "Pending Finance (active)",
+    "is_active": true,
+    "category": "Workplace & Equipment",
+    "policy_ref": "KB-10",
+    "resolution_notes": "Employee works remotely 4 days/week. Manager sign-off received. Awaiting Finance processing."
+  },
+  {
+    "ticket_id": "TK-1048",
+    "employee": "T. Rao",
+    "issue_summary": "Phishing email reported",
+    "status": "Escalated to Security — under investigation (active)",
+    "is_active": true,
+    "category": "Information Security",
+    "policy_ref": "KB-09",
+    "resolution_notes": "Suspected phishing reported to security@veridian-corp.example without forwarding. Security team investigating."
+  },
+  {
+    "ticket_id": "TK-1049",
+    "employee": "V. Nambiar",
+    "issue_summary": "Password reset",
+    "status": "Resolved (closed)",
+    "is_active": false,
+    "category": "Access & Identity",
+    "policy_ref": "KB-01",
+    "resolution_notes": "Account locked after 5 failed attempts. IT agent unlocked manually per KB-01."
+  },
+  {
+    "ticket_id": "TK-1050",
+    "employee": "J. Fernandes",
+    "issue_summary": "Admin access request",
+    "status": "Rejected — no business justification provided (closed)",
+    "is_active": false,
+    "category": "Access & Identity",
+    "policy_ref": "Access Control Governance",
+    "resolution_notes": "Admin access requires formal business justification and department owner sign-off. Rejected due to lack of justification."
+  },
+  {
+    "ticket_id": "TK-1051",
+    "employee": "L. Menon",
+    "issue_summary": "Guest Wi-Fi issued",
+    "status": "Resolved (closed)",
+    "is_active": false,
+    "category": "Network & Remote Access",
+    "policy_ref": "KB-07",
+    "resolution_notes": "Guest Wi-Fi credentials generated at front-desk kiosk directly by employee (no IT ticket required)."
+  }
+]
