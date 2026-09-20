@@ -4,8 +4,14 @@ import os
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 
-DB_PATH = Path(__file__).resolve().parent.parent.parent / "veridian.db"
-DATA_DIR = Path(__file__).resolve().parent.parent.parent / "data"
+if os.environ.get("VERCEL") or os.environ.get("AWS_LAMBDA_FUNCTION_NAME"):
+    DB_PATH = Path("/tmp/veridian.db")
+else:
+    DB_PATH = Path(__file__).resolve().parent.parent.parent / "veridian.db"
+
+DATA_DIR = Path(__file__).resolve().parent.parent.parent / "backend" / "data"
+if not DATA_DIR.exists():
+    DATA_DIR = Path(__file__).resolve().parent.parent.parent / "data"
 
 def get_db_connection():
     conn = sqlite3.connect(str(DB_PATH))
